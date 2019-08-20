@@ -6,13 +6,13 @@ import csv
 
 def main():
     # get release codes from csv
-    release_codes = [c for code in read_csv(r'data\release_codes.csv') for c in code]
+    release_codes = [c for code in read_csv(r'data/release_codes.csv') for c in code]
     # create urls for web scraping
-    urls = [f'https://www.discogs.com/de/sell/release/{r}?ev=rb' for r in release_codes]
+    urls = ['https://www.discogs.com/de/sell/release/{}?ev=rb'.format(r) for r in release_codes]
     # web scraping
     current_offers = list(get_offers_from_dicogs(urls))
     # get last offers from csv
-    last_offers = read_csv(r'data\offers.csv')
+    last_offers = read_csv(r'data/offers.csv')
     # compare results from web scraping (current offers) with last offers
     # and only send mail if there are any changes
     if not current_offers == last_offers:
@@ -48,7 +48,7 @@ def read_csv(file, delim='|'):
 
 
 def write_csv(offers):
-    with open(r'data\offers.csv', 'w', newline='') as csv_file:
+    with open(r'data/offers.csv', 'w', newline='') as csv_file:
         writer = csv.writer(csv_file, delimiter='|')
         writer.writerows(offers)
                    
