@@ -22,15 +22,16 @@ INPUTS:
 
 1. Vinyl release codes from discogs.com: 
 
-Each vinyl has a release code that must be saved in the following file: data\release_codes.csv
+- Each vinyl has a release code that must be saved in the following file: data\release_codes.csv
 
 2. Config file
 
-Rename "config_default.ini" to "config.ini" and specify your mail address, receiver, subject, smtp url and account credentials.
+- Rename "config_default.ini" to "config.ini" and specify your mail address, receiver, subject, smtp url and account credentials.
 
 ____________________________________________________________________________________________________________________________________________
 
 If you have any comments or ideas to make the code better or more beautiful I am always open for suggestions
 
 Best regards
+
 Matthias
