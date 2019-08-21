@@ -3,8 +3,8 @@
 ____________________________________________________________________________________________________________________________________________
 
 Summary:
->> checks current offers on www.discogs.com for a given list of vinyl records
->> sends an email with all availale offers for each record including the price, vinyl quality and seller's country
+- checks current offers on www.discogs.com for a given list of vinyl records
+- sends an email with all availale offers for each record including the price, vinyl quality and seller's country
 
 ____________________________________________________________________________________________________________________________________________
 
